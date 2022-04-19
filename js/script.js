@@ -2,6 +2,15 @@
 // Created on: Apr 2022
 // This file contains the JS functions for index.html
 
+/**
+ * Check servie worker.
+ */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Unit3-04-HTML/sw.js", {
+    scope: "/ICS2O-Unit3-04-HTML/",
+  })
+}
+
 'use strict'
 
 /**
